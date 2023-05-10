@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня</title> 
+    <link rel="stylesheet" href="tables.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+    <script src="tables.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="navbar">
+        
+      </div>
+        <h1>Брони столиков</h1>
+        <div class="block">
+          <ul id="tables-list"></ul>
+          <script id="tables" type="text/x-handlebars-template">
+              {{#each tables }}
+              <div class="miniblock">
+              <p>
+                  <h2>{{user.name}} ({{user.phone_number}}) - столик номер {{number}}</h2>
+              </p>
+              <button type="button" id="btn" onclick="deleteRent(this)" data-id="{{id}}">Отменить бронь</button> 
+            </div>
+              {{/each}}
+          </script>
+          </div>
+        <button type="button"><a href="/Users/dara/Desktop/coffee_house/coffee_house%20front/lk_admin/admin.html">Назад</a></button>
+
+    </main> 
+    
+</body>

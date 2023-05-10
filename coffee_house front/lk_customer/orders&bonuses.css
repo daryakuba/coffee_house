@@ -1,0 +1,47 @@
+html {
+  background-color: #a4a4a4;
+}
+
+h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 65px;
+  margin-top: 100px;
+
+}
+h2{
+  text-align: center;
+  color: rgb(22, 76, 22);
+  font-size: 35px;
+  margin-top: 60px;
+}
+h3{
+  text-align: center;
+  color: rgb(47, 47, 47);
+  font-size: 25px;
+  margin-top: 60px;
+}
+.main {
+  margin-top: 30px; 
+}
+
+.miniblock{
+  border: 5px solid rgb(51, 51, 51);
+  margin-bottom: 30px;
+  background-color: #cacaca;
+}
+button {
+  margin: 0 auto;
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+  background-size: 100%;
+}
+button:active {
+  width: 127px;
+  height: 37px;
+}
+a{
+  color: rgb(0,0,0);
+}

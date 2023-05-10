@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня</title> 
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+    <script src="admin.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="navbar">
+        <a href="/Users/dara/Desktop/coffee_house/coffee_house front/lk_admin/tables.html">Просмотр броней столиков</a>
+      </div>
+      <h1>Создание заказа</h1>
+      <form class="mainform" >
+      <label for="username">Логин покупателя:</label>
+      <input type="text" id="username" name="username"><br>
+      <button type="button" id="btn" onclick="createOrder()">Добавить</button> 
+      </form>
+
+
+      <h2>Добавьте позиции в заказ</h2>
+      <div class="block">
+        <ul id="products-list"></ul>
+        <script id="products" type="text/x-handlebars-template">
+            {{#each products }}
+            <div class="miniblock">
+            <p>
+                <h3>{{name}}______{{price}} рублей</h3>
+            </p>
+            <button type="button" id="btn" onclick="addProduct(this)" data-id="{{id}}">Добавить</button> 
+          </div>
+            {{/each}}
+        </script>
+        </div>
+
+      <p>
+         <button class="main_button" type="button" onclick="setBonuses()">Начислить бонусы</button>
+      </p>
+    
+    </main> 
+    
+</body>
